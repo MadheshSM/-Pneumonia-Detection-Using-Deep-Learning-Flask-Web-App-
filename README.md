@@ -1,67 +1,60 @@
 🩺 Pneumonia Detection Using Deep Learning (Flask Web App)
 
-This project is an AI-powered Chest X-ray Pneumonia Detection System built using:
+This project is an **AI-powered Chest X-ray Pneumonia Detection System** built using:
 
-TensorFlow / Keras (CNN Model)
+* **TensorFlow / Keras** (CNN Model)
+* **Flask Web Application**
+* **PDF Report Generator** (ReportLab)
+* **Interactive Chatbot Assistant**
+* **Confidence Visualization Chart (Matplotlib)**
 
-Flask Web Application
+The system allows users to upload a **Chest X-ray**, and the AI model predicts whether the patient is **NORMAL** or has **PNEUMONIA**, along with confidence levels.
 
-PDF Report Generator (ReportLab)
+A professional **PDF medical-style report** is generated for download.
 
-Interactive Chatbot Assistant
+---
 
-Confidence Visualization Chart (Matplotlib)
+## ⭐ Features
 
-The system allows users to upload a Chest X-ray, and the AI model predicts whether the patient is NORMAL or has PNEUMONIA, along with confidence levels.
+### 🔍 Pneumonia Prediction
 
-A professional PDF medical-style report is generated for download.
+* Upload any chest X-ray image
+* Model predicts: **NORMAL** or **PNEUMONIA**
+* Shows **confidence percentage**
+* Displays uploaded image on the result page
 
-⭐ Features
-🔍 Pneumonia Prediction
-
-Upload any chest X-ray image
-
-Model predicts: NORMAL or PNEUMONIA
-
-Shows confidence percentage
-
-Displays uploaded image on the result page
-
-📄 Auto PDF Report Generation
+### 📄 Auto PDF Report Generation
 
 The PDF includes:
 
-Patient details
+* Patient details
+* Uploaded X-ray image
+* AI diagnosis
+* Confidence chart
+* Timestamp
+* Medical disclaimer
 
-Uploaded X-ray image
-
-AI diagnosis
-
-Confidence chart
-
-Timestamp
-
-Medical disclaimer
-
-🤖 Built-in Chatbot
+### 🤖 Built-in Chatbot
 
 Ask questions like:
 
-“What is pneumonia?”
+* *“What is pneumonia?”*
+* *“How do I download my report?”*
+* *“Show my last prediction”*
 
-“How do I download my report?”
-
-“Show my last prediction”
-
-📊 Confidence Visualization
+### 📊 Confidence Visualization
 
 Horizontal bar graph generated using Matplotlib.
 
-🖥️ User-friendly Web Interface
+### 🖥️ User-friendly Web Interface
 
 Simple form to upload images + chatbot panel.
 
-📂 Project Structure
+---
+
+# 📂 Project Structure
+
+```
 Pneumonia-Detection-AI/
 │── app.py
 │── newt.py
@@ -82,69 +75,79 @@ Pneumonia-Detection-AI/
 ├── uploads/      (auto-created)
 ├── reports/      (auto-created)
 └── .gitignore
+```
 
-🚀 How to Run Locally
-1️⃣ Clone the Repository
+---
+
+# 🚀 How to Run Locally
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/yourusername/Pneumonia-Detection-AI.git
 cd Pneumonia-Detection-AI
+```
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-3️⃣ Run the Flask App
+### 3️⃣ Run the Flask App
+
+```bash
 python app.py
+```
 
-4️⃣ Open in Browser
+### 4️⃣ Open in Browser
+
+```
 http://127.0.0.1:5000/
-
+```
 
 Upload an X-ray → View prediction → Download report.
 
-🧠 Model Details
+---
 
-Trained on Chest X-ray (Pneumonia) dataset
+# 🧠 Model Details
 
-Input size: 224×224
+* Trained on **Chest X-ray (Pneumonia)** dataset
+* Input size: **224×224**
+* Uses CNN architecture
+* Outputs: **NORMAL** / **PNEUMONIA**
+* Probability converted into confidence (%)
+* Model adjusts extremely high confidence values to avoid unrealistic 100% outputs
 
-Uses CNN architecture
+---
 
-Outputs: NORMAL / PNEUMONIA
+# 📄 PDF Report Example Includes:
 
-Probability converted into confidence (%)
+* Patient name, age, gender
+* Timestamp
+* X-ray preview
+* AI prediction
+* Confidence %
+* Confidence chart
+* Disclaimer
 
-Model adjusts extremely high confidence values to avoid unrealistic 100% outputs
+---
 
-📄 PDF Report Example Includes:
-
-Patient name, age, gender
-
-Timestamp
-
-X-ray preview
-
-AI prediction
-
-Confidence %
-
-Confidence chart
-
-Disclaimer
-
-💬 Chatbot Capabilities
+# 💬 Chatbot Capabilities
 
 The chatbot can answer:
 
-“Hello / Hi”
+* “Hello / Hi”
+* “What is pneumonia?”
+* “How to upload X-ray?”
+* “Where is my report?”
+* “Show my last result”
 
-“What is pneumonia?”
+---
 
-“How to upload X-ray?”
+# 🧾 Requirements (summary)
 
-“Where is my report?”
-
-“Show my last result”
-
-🧾 Requirements (summary)
+```
 Flask
 tensorflow
 numpy
@@ -152,29 +155,30 @@ matplotlib
 reportlab
 Pillow
 werkzeug
+```
 
+Full version in `requirements.txt`.
 
-Full version in requirements.txt.
+---
 
-🔒 Important Notes
+# 🔒 Important Notes
 
-This project is for research and educational purposes only.
+* This project is for **research and educational purposes only**.
+* It is **NOT** a medical-grade diagnostic tool.
+* Always consult certified medical professionals for actual diagnosis.
 
-It is NOT a medical-grade diagnostic tool.
+---
 
-Always consult certified medical professionals for actual diagnosis.
-
-🤝 Contributing
+# 🤝 Contributing
 
 Pull requests are welcome!
 For major changes, open an issue to discuss your ideas.
 
-🌟 Acknowledgements
+---
 
-Chest X-ray Dataset (Pneumonia)
+# 🌟 Acknowledgements
 
-TensorFlow / Keras
-
-Flask Framework
-
-ReportLab for PDF generation
+* Chest X-ray Dataset (Pneumonia)
+* TensorFlow / Keras
+* Flask Framework
+* ReportLab for PDF generation
