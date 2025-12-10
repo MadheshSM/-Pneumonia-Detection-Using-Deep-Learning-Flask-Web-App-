@@ -69,8 +69,7 @@ Pneumonia-Detection-AI/
 │     ├── style.css
 │     └── script.js
 │
-├── model_training/
-│     └── Pneumonia_Detection_using_Deep_Learning.ipynb
+├──Pneumonia_Detection_using_Deep_Learning.ipynb
 │
 ├── uploads/      (auto-created)
 ├── reports/      (auto-created)
@@ -80,14 +79,6 @@ Pneumonia-Detection-AI/
 ---
 
 # 🚀 How to Run Locally
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/Pneumonia-Detection-AI.git
-cd Pneumonia-Detection-AI
-```
-
 ### 2️⃣ Install Dependencies
 
 ```bash
